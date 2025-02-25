@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
-import 'screens/ride_pref/ride_pref_screen.dart';
-import 'theme/theme.dart';
+
+import 'screens/test_screen.dart'; // Import the test screen
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: appTheme,
-      home: Scaffold(body: RidePrefScreen()),
+      debugShowCheckedModeBanner: false, 
+      title: 'BlaButton Test',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: TestScreen(), // Set TestScreen as the home screen
     );
   }
 }
