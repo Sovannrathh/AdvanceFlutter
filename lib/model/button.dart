@@ -17,7 +17,7 @@ class BlaButton extends StatelessWidget {
     this.backgroundColor = Colors.blue,
     this.iconData,
     this.iconSize = 24.0,
-    this.isDisabled = false,
+    this.isDisabled = false, required String label, required bool isPrimary, required bool hasIcon,
   }) : super(key: key);
 
   @override
