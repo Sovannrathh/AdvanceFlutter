@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import '../models/course.dart';
+import '../models/course_model.dart';
 import 'course_score_form.dart';
+import '../providers/courses_provider.dart';
 
 class CourseScreen extends StatefulWidget {
   const CourseScreen({super.key, required this.course});

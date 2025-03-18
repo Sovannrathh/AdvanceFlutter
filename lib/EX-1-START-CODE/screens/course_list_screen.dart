@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/course.dart';
+import '../models/course_model.dart';
 import 'course_screen.dart';
 
 const Color mainColor = Colors.blue;
@@ -12,7 +12,11 @@ class CourseListScreen extends StatefulWidget {
 }
 
 class _CourseListScreenState extends State<CourseListScreen> {
-  final List<Course> _allCourses = [Course(name: 'HTML'), Course(name: 'JAVA')];
+  final List<Course> _allCourses = [
+    Course(id: '1', name: 'Course 1'),
+    Course(id: '2', name: 'HTML'),
+    Course(id: '3', name: 'JAVA')
+  ];
 
   void _editCourse(Course course) async {
     await Navigator.of(context).push<Course>(
